@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="front (1).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>W FLIXER</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>W fLiXeR</h1>
+        </div>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="movies.html">MOVIES</a></li>
+            <li><a href="Tv-Show.html">TV SHOW</a></li>
+            <li><a href="javascript:void(0);" onclick="openLoginModal()">LOGIN</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="image">
+        <img src="2.jpg" alt="Background Image">
+    </div>
+
+    <div class="search">
+        <button class="search-logo" onclick="toggleSearchInput()">
+            <i class="fas fa-search"></i> <!-- Search Icon -->
+        </button>
+        <input type="text" placeholder="Search Anything......" id="searchInput">
+    </div>
+
+    <div class="text">
+        <p>W Flixer is an online streaming website yhat can you watched free movies and TV shows. Website provides that it provides high-quality content and does not require any subscriptions hence, it has become a huge attraction for any online audience seeking free entertainment. This site is a collection of movies and TV shows from diverse genres like action, drama, comedy, horror, and many others. Newly released films and the most-watched television series are updated very frequently.
+
+            Otherwise, like with many free movie streaming sites, W Flixer is riddled with challenges of legality, including copyright infringement where distribution or streaming of a movie takes place with any authorization in most jurisdictions. Also, pop-ups and other links to harmful sites are very much part and parcel of such sites, as they infect users and generate immense security risks, such as malware infections and phishing.
+            
+            Legal streaming options for movie lovers include Tubi, Crackle, Pluto TV, and Freevie, which allow you to watch ad-supported movies and TV shows. Such services bring forth a guarantee that the content is rightly licensed, thereby allowing viewers to have their entertainment without the risk of security and legal issues of illegal streaming sites.</p>
+            <p id="loginError" style="color: red;"></p>
+            <p id="forgotPasswordError" style="color: red;"></p>
+    </div>
+
+   <!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeLoginModal()">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="handleLogin(event)">
+            <input type="email" id="email" placeholder="Enter your email" required><br>
+            <input type="password" id="password" placeholder="Enter your password" required><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+  
+    <script src="front.js"></script>
+</body>
+</html>
